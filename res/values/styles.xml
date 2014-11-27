@@ -1,0 +1,27 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+ 
+    <!-- Base application theme -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="actionBarStyle">@style/ActionBar.Solid.Graduare</item>
+    </style>
+ 
+    <!-- ActionBar style -->
+    <style name="ActionBar.Solid.Graduare"
+        parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="background">@color/graduare_blue</item>
+    </style>
+ 
+    <!-- Main activity theme -->
+    <style name="GraduareTheme" parent="AppTheme">
+        <item name="actionBarStyle">@style/ActionBar.Solid.Graduare.NoTitle</item>
+    </style>
+    
+ 
+    <!-- Main activity action bar style -->
+    <style name="ActionBar.Solid.Graduare.NoTitle"
+           parent="@style/ActionBar.Solid.Graduare">
+        <item name="displayOptions">useLogo|showHome</item>
+        <item name="logo">@drawable/ic_logo</item>
+    </style>
+	
+</resources>

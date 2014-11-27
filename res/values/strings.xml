@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Graduare</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_about">Sobre</string>
+    <string name="action_logout">Sair</string>
+    <string name="your_info">Precisamos de suas informações:</string>
+    <string name="email">E-mail</string>
+    <string name="registratrion_code">Matrícula</string>
+    <string name="login">Entrar</string>
+    <string name="invalid_login">Informações inválidas</string>
+    <string name="title_activity_course">CourseActivity</string>
+    <string name="your_courses">Suas disciplinas:</string>
+    <string name="no_courses_yet">Nenhuma disciplina disponível</string>
+    <string name="no_exam_results">Nenhum resultado disponível</string>
+    <string name="title_activity_exam">ExamActivity</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="total">Total</string>
+    <string name="slash">/</string>
+
+</resources>

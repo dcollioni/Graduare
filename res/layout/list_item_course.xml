@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:minHeight="?android:attr/listPreferredItemHeight"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="10dp">
+    
+    <LinearLayout 
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_weight="1" >
+        
+        <TextView
+            android:id="@+id/list_item_course_textview"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textAppearance="?android:textAppearanceMedium" />
+        
+        <TextView
+            android:id="@+id/list_item_teacher_textview"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textAppearance="?android:textAppearanceSmall"
+	        android:textColor="@color/dark_grey" />
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:gravity="right">
+        
+        <TextView
+	        android:id="@+id/list_item_college_textview"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textAppearance="?android:textAppearanceSmall"
+	        android:textColor="@color/dark_grey" />
+        
+        <TextView
+            android:id="@+id/list_item_date_textview"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textAppearance="?android:textAppearanceSmall"
+	        android:textColor="@color/dark_grey" />
+        
+    </LinearLayout>
+ 
+</LinearLayout>
