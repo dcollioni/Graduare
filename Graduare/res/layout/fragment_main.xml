@@ -24,12 +24,7 @@
         android:layout_height="wrap_content"
         android:hint="@string/email"
         android:inputType="textEmailAddress"
-        android:layout_marginTop="16dp"
-        android:text="1destrux1@gmail.com" >
-        
-        <requestFocus />
-        
-    </EditText>
+        android:layout_marginTop="16dp" />
     
     <EditText 
         android:id="@+id/etRegistrationCode"
@@ -38,7 +33,7 @@
         android:hint="@string/registratrion_code"
         android:inputType="numberSigned"
         android:layout_marginTop="16dp"
-        android:text="11201343606" />
+        android:imeOptions="actionDone" />
     
     <Button 
         android:id="@+id/btLogin"

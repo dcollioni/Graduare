@@ -10,20 +10,25 @@ import java.net.URL;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.ActionBarActivity;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.inputmethod.EditorInfo;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.db4o.ObjectSet;
@@ -86,7 +91,10 @@ public class MainActivity extends ActionBarActivity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
         if (id == R.id.action_about) {
-            return true;
+            Intent i = new Intent(MainActivity.this, AboutActivity.class);
+            startActivity(i);
+        	
+        	return true;
         }
         return super.onOptionsItemSelected(item);
     }
@@ -120,11 +128,26 @@ public class MainActivity extends ActionBarActivity {
 					String email = etEmail.getText().toString();
 					String registrationCode = etRegistrationCode.getText().toString();
 					
-					if (email != null && registrationCode != null) {
+					if (!email.isEmpty() && !registrationCode.isEmpty()) {
 						new LoginAsyncTask().execute(email, registrationCode);
 					}
 				}
 			});
+            
+            etRegistrationCode.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+				
+				@Override
+				public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+	                if (actionId == EditorInfo.IME_ACTION_DONE) {
+	                    btLogin.performClick();
+	                    return true;
+	                }
+	                return false;
+				}
+			});
+            
+            InputMethodManager imm = (InputMethodManager) getActivity().getSystemService(Context.INPUT_METHOD_SERVICE);
+            imm.showSoftInput(etEmail, InputMethodManager.SHOW_IMPLICIT);
             
             return rootView;
         }

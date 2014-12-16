@@ -113,6 +113,10 @@ public class CourseActivity extends ActionBarActivity {
 			
 			openMainActivity();
 		}
+		else if (id == R.id.action_about) {
+			Intent i = new Intent(CourseActivity.this, AboutActivity.class);
+            startActivity(i);
+		}
 		return super.onOptionsItemSelected(item);
 	}
 
