@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.dcollioni.graduare"
     android:versionCode="1"
-    android:versionName="1.0" >
+    android:versionName="1.0.0" >
 
     <uses-sdk
         android:minSdkVersion="10"
@@ -28,12 +28,14 @@
         <activity
             android:name=".CourseActivity"
             android:configChanges="orientation|screenSize"
-            android:label="@string/title_activity_course" >
+            android:label="@string/title_activity_course"
+            android:icon="@mipmap/ic_launcher_light" >
         </activity>
         <activity
             android:name=".ExamActivity"
             android:label="@string/title_activity_exam"
-            android:parentActivityName=".CourseActivity" >
+            android:parentActivityName=".CourseActivity"
+            android:icon="@mipmap/ic_launcher_light" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.dcollioni.graduare.CourseActivity" />
