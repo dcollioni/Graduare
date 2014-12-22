@@ -21,6 +21,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
@@ -132,6 +133,7 @@ public class CourseActivity extends ActionBarActivity {
 		private ArrayList<Course> courses;
 		
 		public PlaceholderFragment() {
+			setHasOptionsMenu(true);
 		}
 
 		@Override
@@ -176,6 +178,17 @@ public class CourseActivity extends ActionBarActivity {
 				getActivity().setTitle(loggedStudent.getName());
 				new LoadAsyncTask().execute(loggedStudent.getId());
 			}
+		}
+		
+		@Override
+		public boolean onOptionsItemSelected(MenuItem item) {
+			int id = item.getItemId();
+			
+			if (id == R.id.action_refresh) {
+				new LoadAsyncTask().execute(loggedStudent.getId());
+			}
+			
+			return super.onOptionsItemSelected(item);
 		}
 		
 		private class LoadAsyncTask extends AsyncTask<Integer, Void, ArrayList<Course>> {

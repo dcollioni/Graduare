@@ -1091,7 +1091,7 @@ containing a value of this type.
         public static final int ic_logo_light=0x7f02005e;
     }
     public static final class id {
-        public static final int action_about=0x7f060054;
+        public static final int action_about=0x7f060055;
         public static final int action_bar=0x7f06001c;
         public static final int action_bar_activity_content=0x7f060015;
         public static final int action_bar_container=0x7f06001b;
@@ -1100,10 +1100,11 @@ containing a value of this type.
         public static final int action_bar_subtitle=0x7f060023;
         public static final int action_bar_title=0x7f060022;
         public static final int action_context_bar=0x7f06001d;
-        public static final int action_logout=0x7f060053;
+        public static final int action_logout=0x7f060054;
         public static final int action_menu_divider=0x7f060016;
         public static final int action_menu_presenter=0x7f060017;
         public static final int action_mode_close_button=0x7f060024;
+        public static final int action_refresh=0x7f060053;
         public static final int action_settings=0x7f060052;
         public static final int activity_chooser_view_content=0x7f060025;
         public static final int always=0x7f06000b;
@@ -1293,28 +1294,29 @@ containing a value of this type.
         public static final int abc_shareactionprovider_share_with_application=0x7f0b000b;
         public static final int action_about=0x7f0b0010;
         public static final int action_logout=0x7f0b0011;
+        public static final int action_refresh=0x7f0b0012;
         public static final int action_settings=0x7f0b000f;
         public static final int app_name=0x7f0b000d;
-        public static final int author_email=0x7f0b0023;
-        public static final int author_nick=0x7f0b0024;
-        public static final int contact_author=0x7f0b0022;
-        public static final int email=0x7f0b0013;
+        public static final int author_email=0x7f0b0024;
+        public static final int author_nick=0x7f0b0025;
+        public static final int contact_author=0x7f0b0023;
+        public static final int email=0x7f0b0014;
         public static final int hello_world=0x7f0b000e;
-        public static final int invalid_login=0x7f0b0016;
-        public static final int login=0x7f0b0015;
-        public static final int no_courses_yet=0x7f0b0019;
-        public static final int no_exam_results=0x7f0b001a;
-        public static final int registratrion_code=0x7f0b0014;
-        public static final int slash=0x7f0b0020;
-        public static final int title_activity_about=0x7f0b0021;
-        public static final int title_activity_course=0x7f0b0017;
-        public static final int title_activity_exam=0x7f0b001b;
-        public static final int title_section1=0x7f0b001c;
-        public static final int title_section2=0x7f0b001d;
-        public static final int title_section3=0x7f0b001e;
-        public static final int total=0x7f0b001f;
-        public static final int your_courses=0x7f0b0018;
-        public static final int your_info=0x7f0b0012;
+        public static final int invalid_login=0x7f0b0017;
+        public static final int login=0x7f0b0016;
+        public static final int no_courses_yet=0x7f0b001a;
+        public static final int no_exam_results=0x7f0b001b;
+        public static final int registratrion_code=0x7f0b0015;
+        public static final int slash=0x7f0b0021;
+        public static final int title_activity_about=0x7f0b0022;
+        public static final int title_activity_course=0x7f0b0018;
+        public static final int title_activity_exam=0x7f0b001c;
+        public static final int title_section1=0x7f0b001d;
+        public static final int title_section2=0x7f0b001e;
+        public static final int title_section3=0x7f0b001f;
+        public static final int total=0x7f0b0020;
+        public static final int your_courses=0x7f0b0019;
+        public static final int your_info=0x7f0b0013;
     }
     public static final class style {
         /**  ActionBar style 

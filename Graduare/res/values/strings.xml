@@ -6,6 +6,7 @@
     <string name="action_settings">Settings</string>
     <string name="action_about">Sobre</string>
     <string name="action_logout">Sair</string>
+    <string name="action_refresh">Atualizar</string>
     <string name="your_info">Precisamos de suas informações:</string>
     <string name="email">E-mail</string>
     <string name="registratrion_code">Matrícula</string>
